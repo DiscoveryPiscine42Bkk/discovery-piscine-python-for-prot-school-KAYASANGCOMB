@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 x = float(input("Enter a number : "))
 y = 0
 while y < 13:
