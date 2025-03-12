@@ -1,4 +1,4 @@
-#!/usr/bin/bash python
+#!/user/bin/python3
 number = float(input())
 if number > 0 : print("This number is positive.")
 elif number < 0 : print("This number is negative.")
