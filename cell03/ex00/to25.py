@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 x = float(input("Enter a number less than 25 : "))
 if x < 25:
     while x < 26:
