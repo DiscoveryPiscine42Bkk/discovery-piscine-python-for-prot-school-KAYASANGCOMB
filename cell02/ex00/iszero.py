@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 number = float(input())
 if number == 0 : print("This number is equal to zero.")
 else : print("This number is different from zero.")
