@@ -1,6 +1,10 @@
-x = input('Enter here: ')
-y = x.split()
+import sys
+x = input('Enter here (separated by spaces and quotes): ')
+y = x.split('"')
+y = [y.strip() for y in y if y.strip()]
+sys.argv.extend(y)
 print("Arguments:", y)
-if len(y) > 0 :
-    print(f'First parameters:', {y[0]})
-else : print('none')
+z = len(sys.argv) - 1
+if z > 0:
+    print(y[0])
+else: print("none")
