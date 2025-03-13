@@ -1,8 +1,10 @@
-x = input('Enter here: ')
-y = x.split()
-print("Arguments:", y)
-if len(y) > 2 :
-    print("Arguments in reverse order:")
-    for z in reversed(y):
-        print(z)
-else : print('none')
+import sys
+x = input('Enter here (separated by quotes): ')
+y = [item.strip() for item in x.split('"') if item.strip()]
+y = [a for a in y]
+sys.argv.extend(y)
+y.reverse()
+z = len(sys.argv) - 1
+if z > 0:
+    print("Arguments(Reversed):", y)
+else: print("none")
