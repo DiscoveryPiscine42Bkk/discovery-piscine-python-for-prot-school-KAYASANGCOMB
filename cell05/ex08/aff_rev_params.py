@@ -5,6 +5,6 @@ y = [a for a in y]
 sys.argv.extend(y)
 y.reverse()
 z = len(sys.argv) - 1
-if z > 0:
+if z >= 2:
     print("Arguments(Reversed):", y)
 else: print("none")
